@@ -13,6 +13,9 @@ public class FourVMScaler extends VirtualInfrastructure {
 		super(cloud);
 	}
 
+		//NEEDS FIXED 
+	
+	
 	@Override
 	public void tick(long fires) {
 		// Applications which all need a virtual infrastructure 
