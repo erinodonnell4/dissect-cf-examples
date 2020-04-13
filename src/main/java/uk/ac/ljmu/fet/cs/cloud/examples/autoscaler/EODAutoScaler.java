@@ -13,7 +13,7 @@ public class FourVMScaler extends VirtualInfrastructure {
 		super(cloud);
 	}
 
-		//NEEDS FIXED 
+		//look at again!
 	
 	
 	@Override
