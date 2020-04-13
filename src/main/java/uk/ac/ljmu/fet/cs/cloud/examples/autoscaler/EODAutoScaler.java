@@ -7,9 +7,9 @@ import hu.mta.sztaki.lpds.cloud.simulator.iaas.IaaSService;
 import hu.mta.sztaki.lpds.cloud.simulator.iaas.VirtualMachine;
 import hu.mta.sztaki.lpds.cloud.simulator.iaas.VirtualMachine.State;
 
-public class FourVMScaler extends VirtualInfrastructure {
+public class EODAutoScaler extends VirtualInfrastructure {
 
-	public FourVMScaler(IaaSService cloud) {
+	public EODAutoScaler(IaaSService cloud) {
 		super(cloud);
 	}
 
