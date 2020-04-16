@@ -30,6 +30,7 @@ import hu.mta.sztaki.lpds.cloud.simulator.helpers.job.Job;
 import hu.mta.sztaki.lpds.cloud.simulator.helpers.job.JobListAnalyser;
 import hu.mta.sztaki.lpds.cloud.simulator.helpers.trace.GenericTraceProducer;
 import hu.mta.sztaki.lpds.cloud.simulator.helpers.trace.TraceManagementException;
+import hu.
 
 /**
  * Processes a trace and sends its jobs to a job launcher. If a job cannot be

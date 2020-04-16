@@ -24,6 +24,7 @@ package uk.ac.ljmu.fet.cs.cloud.examples.autoscaler;
 
 import java.util.ArrayList;
 
+
 import hu.mta.sztaki.lpds.cloud.simulator.helpers.job.Job;
 import hu.mta.sztaki.lpds.cloud.simulator.iaas.VirtualMachine;
 import hu.mta.sztaki.lpds.cloud.simulator.iaas.resourcemodel.ResourceConsumption;
