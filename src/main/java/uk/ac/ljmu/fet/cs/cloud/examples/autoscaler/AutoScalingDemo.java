@@ -23,6 +23,7 @@
 package uk.ac.ljmu.fet.cs.cloud.examples.autoscaler;
 
 import java.security.InvalidParameterException;
+
 import java.util.HashMap;
 
 import hu.mta.sztaki.lpds.cloud.simulator.Timed;
