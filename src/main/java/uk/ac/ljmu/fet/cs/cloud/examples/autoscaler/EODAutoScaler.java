@@ -2,6 +2,7 @@ package uk.ac.ljmu.fet.cs.cloud.examples.autoscaler;
 
 import java.util.ArrayList;
 
+
 import java.util.Iterator;
 
 import hu.mta.sztaki.lpds.cloud.simulator.iaas.IaaSService;

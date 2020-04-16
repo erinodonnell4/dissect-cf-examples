@@ -25,6 +25,7 @@ package uk.ac.ljmu.fet.cs.cloud.examples.autoscaler;
 import java.util.ArrayDeque;
 
 
+
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -49,6 +50,10 @@ import hu.mta.sztaki.lpds.cloud.simulator.io.VirtualAppliance;
  *         Moores University, (c) 2019"
  */
 public abstract class VirtualInfrastructure extends Timed implements VirtualMachine.StateChange {
+	
+	
+		
+	}
 	/**
 	 * The virtual infrastructure for each executable. The keys of the map are the
 	 * executable types for which we have a virtual infrastructure. The values of
