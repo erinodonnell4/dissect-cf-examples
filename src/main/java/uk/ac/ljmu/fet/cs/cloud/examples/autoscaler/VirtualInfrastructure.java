@@ -23,6 +23,8 @@
 package uk.ac.ljmu.fet.cs.cloud.examples.autoscaler;
 
 import java.util.ArrayDeque;
+
+
 import java.util.ArrayList;
 import java.util.HashMap;
 
