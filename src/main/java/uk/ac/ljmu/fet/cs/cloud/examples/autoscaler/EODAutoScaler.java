@@ -17,7 +17,7 @@ public class EODAutoScaler extends VirtualInfrastructure {
 	@Override
 	public void tick(long fires) {
 		
-		// REQUIRE - virtual infrastructure 
+		//applications which  REQUIRE  virtual infrastructure 
 		
 		final Iterator<String> kinds = vmSetPerKind.keySet().iterator();
 		
