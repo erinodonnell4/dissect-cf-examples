@@ -197,7 +197,7 @@ public abstract class VirtualInfrastructure extends Timed implements VirtualMach
 	 * Makes sure that the given VM is no longer having any local monitoring
 	 * mechanism running and also that it is no longer present at the cloud.
 	 * 
-	 * @param vm The VM to be destroyed.
+	 * @param vm The VM to be destroyed.//
 	 */
 	protected void destroyVM(final VirtualMachine vm) {
 		vmmonitors.remove(vm).finishMon();
