@@ -17,7 +17,7 @@ public class EODAutoScaler extends VirtualInfrastructure {
 	@Override
 	public void tick(long fires) {
 		
-		// Applications which require virtual infrastructure 
+		// REQUIRE - virtual infrastructure 
 		
 		final Iterator<String> kinds = vmSetPerKind.keySet().iterator();
 		
@@ -25,20 +25,25 @@ public class EODAutoScaler extends VirtualInfrastructure {
 			final String kind = kinds.next();
 			final ArrayList<VirtualMachine> vmset = vmSetPerKind.get(kind);
 			
+			// Checking VM set size
+			
 			if (vmset.size() > 0) {
 				if (vmset.size() < 3) {
 					requestVM(kind);
 				}
 			}
-			
+			 
+			// If VM is empty - request new VM to support tasks.
 			else if (vmset.isEmpty()) {
 				requestVM(kind);
 			}
 			
+			// If VM okay - set VM state to Running.
+			
 			else for (VirtualMachine vm : vmset) {	
 				if (vm.getState().equals(State.RUNNING)) {
 					
-					// Will destroy the VM if empty and there are no tasks.
+					// This will destroy any empty or unneeded VM's.
 					
 					if (vm.underProcessing.isEmpty() && vm.toBeAdded.isEmpty()) {
 						destroyVM(vm);
