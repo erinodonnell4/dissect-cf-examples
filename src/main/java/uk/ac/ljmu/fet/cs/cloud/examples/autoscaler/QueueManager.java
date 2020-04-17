@@ -85,7 +85,7 @@ class QueueManager extends Timed {
 
 	/**
 	 * The queue management algorithm will attempt to launch a job if it is first in
-	 * its executable's queue.
+	 * its executable's queue./
 	 */
 	@Override
 	public void tick(final long fires) {
