@@ -111,7 +111,7 @@ public class JobArrivalHandler extends Timed {
 	public void tick(long currTime) {
 		for (int i = currIndex; i < totaljobcount; i++) {
 			final Job toprocess = jobs.get(i);
-			final long submittime = toprocess.getSubmittimeSecs() * 1000;
+			final long submit = toprocess.getSubmittimeSecs() * 1000;
 			if (currTime == submittime) {
 				// Job is due
 				if (launcher.launchAJob(toprocess)) {
